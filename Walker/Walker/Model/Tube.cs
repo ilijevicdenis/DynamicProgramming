@@ -2,12 +2,13 @@
 {
     public sealed class Tube
     {
-        public Tube(int row, int col, string status)
+        public Tube(int row, int col, string status = default(string))
         {
             Row = row;
             Column = col;
             Status = status;
-            TubeColor = TubeColor.Resolve(this);
+            if(!string.IsNullOrEmpty(status))
+             TubeColor = TubeColor.Resolve(this);
         }
 
         public int Row { get; private set; }

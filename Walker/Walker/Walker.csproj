@@ -56,13 +56,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataAccess\TubeFinder.cs" />
     <Compile Include="DataAccess\TubeLoader.cs" />
     <Compile Include="GlobalData\Constants.cs" />
     <Compile Include="Interfaces\ILoader.cs" />
+    <Compile Include="Model\Point.cs" />
+    <Compile Include="Model\SecondaryAxis.cs" />
     <Compile Include="Model\Tube.cs" />
     <Compile Include="Model\TubeColor.cs" />
     <Compile Include="Model\Tubes.cs" />
     <Compile Include="Model\TubesheetModel.cs" />
+    <Compile Include="Model\ViewModelBase.cs" />
     <Compile Include="TubesheetViewModel.cs" />
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
