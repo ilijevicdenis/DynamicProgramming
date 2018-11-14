@@ -61,6 +61,8 @@
     <Compile Include="GlobalData\Constants.cs" />
     <Compile Include="Interfaces\ILoader.cs" />
     <Compile Include="Model\Point.cs" />
+    <Compile Include="Model\AxisBase.cs" />
+    <Compile Include="Model\PolarPoint.cs" />
     <Compile Include="Model\SecondaryAxis.cs" />
     <Compile Include="Model\Tube.cs" />
     <Compile Include="Model\TubeColor.cs" />

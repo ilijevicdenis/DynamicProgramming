@@ -1,4 +1,5 @@
-﻿using Walker.GlobalData;
+﻿using System;
+using Walker.GlobalData;
 
 namespace Walker.Model
 {
@@ -14,6 +15,20 @@ namespace Walker.Model
             X = tube.Column;
             Y = tube.Row;
             IsLocked = tube.TubeColor.Name == Constants.RED_COLOR;
+        }
+
+        private Point() { }
+
+        public static Point FromPolarPoint(PolarPoint polarPoint)
+        {
+
+            var x = Convert.ToInt32(Math.Round(polarPoint.R * Math.Cos(polarPoint.Degree)));
+
+            return new Point
+            {
+                X = x < 1 ? 1 : x,
+                Y = Convert.ToInt32(polarPoint.R * Math.Sin(polarPoint.Degree))
+            };
         }
     }
 }

@@ -21,7 +21,11 @@ namespace Walker.Tests
                         new Tube(1, 1, "Unknown"),
                         new Tube(1, 4, "Unknown"),
                         new Tube(1, 3, "Unknown"),
-                        new Tube(1, 6, "Unknown")
+                        new Tube(1, 6, "Unknown"),
+                        new Tube(6, 4, "Unknown"),
+                        new Tube(3, 4, "Unknown"),
+                        new Tube(4, 4, "Unknown"),
+                        new Tube(1, 4, "Unknown")
                     }));
     }
 }
